@@ -11,7 +11,7 @@ import lombok.Setter;
 @Builder
 public class AuthResponseDto {
     @NotBlank
-    private String name;
+    private String username;
     @NotBlank
-    private String token;
+    private String password;
 }
