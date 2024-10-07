@@ -1,4 +1,4 @@
-package com.riwi.performancetest.Users.Application.Dto;
+package com.riwi.performancetest.Users.Infrastructure.Dtos;
 
 
 import jakarta.validation.constraints.NotBlank;
@@ -10,8 +10,10 @@ import lombok.Setter;
 @Setter
 @Builder
 public class AuthResponseDto {
-    @NotBlank
-    private String name;
-    @NotBlank
-    private String token;
+
+    private String fullname;
+
+    private String username;
+
+    private String password;
 }
