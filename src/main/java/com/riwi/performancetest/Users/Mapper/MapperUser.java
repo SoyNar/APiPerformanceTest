@@ -20,7 +20,7 @@ public class MapperUser {
         public User userDtoToUser(AuthRequestDto userRequestDto) {
             return User.builder()
                     .firstName(userRequestDto.getFirstName())
-                    .username(userRequestDto.getUsarname())
+                    .username(userRequestDto.getUsername())
                     .password(userRequestDto.getPassword())
                     .role(userRequestDto.getRole())
                     .build();
