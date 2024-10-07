@@ -1,5 +1,6 @@
-package com.riwi.performancetest.Users.Application.Dto;
+package com.riwi.performancetest.Users.Infrastructure.Dtos;
 
+import com.riwi.performancetest.Users.Domain.Role;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,7 +13,9 @@ public class AuthRequestDto {
     @NotBlank
     private String firstName;
     @NotBlank
-    private String usarname;
+    private String username;
     @NotBlank
     private String password;
+    @NotBlank
+    private Role role;
 }

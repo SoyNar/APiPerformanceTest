@@ -3,14 +3,16 @@ package com.riwi.performancetest.Users.Domain;
 import com.riwi.performancetest.Palets.Domain.Palets;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Entity
+@Builder
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "user")
 public class User {
 @Id
