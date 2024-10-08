@@ -2,14 +2,16 @@ package com.riwi.performancetest.Palets.Domain;
 
 import com.riwi.performancetest.Users.Domain.User;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "palets")
 public class Palets {
     @Id

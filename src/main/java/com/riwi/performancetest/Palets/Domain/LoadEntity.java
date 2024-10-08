@@ -1,12 +1,14 @@
 package com.riwi.performancetest.Palets.Domain;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @Table(name = "loadEntity")
 public class LoadEntity {
     @Id

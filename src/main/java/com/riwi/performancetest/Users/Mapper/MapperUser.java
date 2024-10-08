@@ -13,7 +13,6 @@ public class MapperUser {
             return AuthResponseDto.builder()
                     .fullname(user.getFirstName())
                     .username(user.getUsername())
-                    .password(user.getPassword())
                     .build();
         }
 
