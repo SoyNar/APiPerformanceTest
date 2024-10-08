@@ -11,13 +11,14 @@ import lombok.Setter;
 @Setter
 @Builder
 public class LoadRequesDTo {
+
+    private Long idPalet;
     @NotBlank
     private  int weight;
     @NotBlank
     private int dimensions;
     @NotBlank
     private StateLoad stateLoad;
-    @NotBlank
-    private Palets palets;
+
 
 }
